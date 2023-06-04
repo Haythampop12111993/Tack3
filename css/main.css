@@ -1,0 +1,83 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+.container {
+  width: 75%;
+  margin: 30px auto;
+}
+.clear {
+  clear: both;
+}
+.section {
+  margin-bottom: 100px;
+}
+.section .section-img,
+.section-content {
+  float: left;
+}
+.section .section-img {
+  width: 400px;
+  height: 350px;
+  background-color: cadetblue;
+  position: relative;
+  box-shadow: 0 0 10px black;
+  border-radius: 10px;
+}
+.section .section-img .position-move {
+  position: absolute;
+  bottom: -18px;
+  left: 50px;
+  width: 75%;
+  margin: auto;
+  padding: 10px;
+  background-color: orange;
+  text-transform: capitalize;
+  box-shadow: 0 0 15px black;
+  border-radius: 10px;
+}
+.section.two .section-img .position-move {
+  right: -150px;
+}
+.section.there .section-img .position-move {
+  bottom: auto;
+  animation: Div-move 5s infinite linear;
+}
+.section .section-img .position-move i,
+.section .section-img .position-move h4 {
+  display: inline-block;
+  margin-right: 10px;
+}
+.section-content {
+  width: 350px;
+  margin-top: 50px;
+}
+.section.two .section-content {
+  direction: rtl;
+}
+.section-content h2 {
+  margin-bottom: 30px;
+  text-transform: capitalize;
+}
+.section-content p {
+  font-size: 1.1rem;
+}
+.section.one .section-content,
+.section.there .section-content {
+  float: right;
+}
+.section.two .section-img {
+  float: right;
+}
+
+@keyframes Div-move {
+  0%,
+  100% {
+    top: -16px;
+  }
+  50% {
+    top: 330px;
+    bottom: auto;
+  }
+}
